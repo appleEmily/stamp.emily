@@ -15,7 +15,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
     
     var stampArray: [String] = ["flower","heart","balloon","star"]
     
@@ -30,21 +30,54 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func selectPhoto(_ sender: Any) {
+        let imagePickerController: UIImagePickerController = UIImagePickerController()
+        
+        imagePickerController.sourceType = UIImagePickerController.SourceType.photoLibrary
+        imagePickerController.delegate = self
+        imagePickerController.allowsEditing = true
+        
+        self.present(imagePickerController, animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        //ここで持ってくる
+        let image = info[.originalImage] as? UIImage
+        //取ってきたものを普通に使う。
+        background.image = image
+        self.dismiss(animated: true, completion: nil)
+        
+    }
+    @IBAction func save() {
+        let rect:CGRect = CGRect(x: 0, y: 44, width: 414, height: 650)
+        UIGraphicsBeginImageContext(rect.size)
+        self.view.layer.render(in: UIGraphicsGetCurrentContext()!)
+        let capture = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        UIImageWriteToSavedPhotosAlbum(capture!, nil, nil, nil)
+    }
+        
+   
+    
     @IBAction func stampFirst(_ sender: Any) {
         stampindex = 1
     }
     
     @IBAction func stampSecond(_ sender: Any) {
-        stampindex = 2
-    }
-    @IBAction func stampThird(_ sender: Any) {
         stampindex = 3
     }
-    
-    @IBAction func stampForth(_ sender: Any) {
+    @IBAction func stampThird(_ sender: Any) {
         stampindex = 4
     }
     
+    @IBAction func stampForth(_ sender: Any) {
+        stampindex = 2
+    }
+    
+    @IBAction func back(_ sender: Any) {
+        self.imageView.removeFromSuperview()
+    }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch: UITouch = touches.first!
         let location: CGPoint = touch.location(in: self.view)
@@ -66,6 +99,7 @@ class ViewController: UIViewController {
             self.view.addSubview(imageView)
         }
     }
+    
     
 }
 
