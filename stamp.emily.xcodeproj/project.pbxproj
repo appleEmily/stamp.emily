@@ -15,6 +15,12 @@
 		A1BF8E8A234E4A0100C4E909 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1BF8E88234E4A0100C4E909 /* LaunchScreen.storyboard */; };
 		A1BF8E95234E4A0200C4E909 /* stamp_emilyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BF8E94234E4A0200C4E909 /* stamp_emilyTests.swift */; };
 		A1BF8EA0234E4A0200C4E909 /* stamp_emilyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BF8E9F234E4A0200C4E909 /* stamp_emilyUITests.swift */; };
+		A1BF8EB2234E4DD100C4E909 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = A1BF8EAE234E4DD000C4E909 /* star.png */; };
+		A1BF8EB4234E4DD100C4E909 /* flower.png in Resources */ = {isa = PBXBuildFile; fileRef = A1BF8EB0234E4DD100C4E909 /* flower.png */; };
+		A1BF8EB7234E4E8C00C4E909 /* flag.png in Resources */ = {isa = PBXBuildFile; fileRef = A1BF8EB5234E4E8B00C4E909 /* flag.png */; };
+		A1BF8EB8234E4E8C00C4E909 /* flag.png in Resources */ = {isa = PBXBuildFile; fileRef = A1BF8EB6234E4E8B00C4E909 /* flag.png */; };
+		A1BF8EBA234E4EFC00C4E909 /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = A1BF8EB9234E4EFC00C4E909 /* heart.png */; };
+		A1BF8EBC234E4F9700C4E909 /* balloon.png in Resources */ = {isa = PBXBuildFile; fileRef = A1BF8EBB234E4F9700C4E909 /* balloon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		A1BF8E9B234E4A0200C4E909 /* stamp.emilyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = stamp.emilyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1BF8E9F234E4A0200C4E909 /* stamp_emilyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stamp_emilyUITests.swift; sourceTree = "<group>"; };
 		A1BF8EA1234E4A0200C4E909 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1BF8EAE234E4DD000C4E909 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		A1BF8EB0234E4DD100C4E909 /* flower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flower.png; sourceTree = "<group>"; };
+		A1BF8EB5234E4E8B00C4E909 /* flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flag.png; sourceTree = "<group>"; };
+		A1BF8EB6234E4E8B00C4E909 /* flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = flag.png; path = ../../../../../../Downloads/flag.png; sourceTree = "<group>"; };
+		A1BF8EB9234E4EFC00C4E909 /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
+		A1BF8EBB234E4F9700C4E909 /* balloon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = balloon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +118,12 @@
 				A1BF8E86234E4A0100C4E909 /* Assets.xcassets */,
 				A1BF8E88234E4A0100C4E909 /* LaunchScreen.storyboard */,
 				A1BF8E8B234E4A0200C4E909 /* Info.plist */,
+				A1BF8EB6234E4E8B00C4E909 /* flag.png */,
+				A1BF8EB5234E4E8B00C4E909 /* flag.png */,
+				A1BF8EB0234E4DD100C4E909 /* flower.png */,
+				A1BF8EB9234E4EFC00C4E909 /* heart.png */,
+				A1BF8EAE234E4DD000C4E909 /* star.png */,
+				A1BF8EBB234E4F9700C4E909 /* balloon.png */,
 			);
 			path = stamp.emily;
 			sourceTree = "<group>";
@@ -232,7 +250,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1BF8EBA234E4EFC00C4E909 /* heart.png in Resources */,
+				A1BF8EB2234E4DD100C4E909 /* star.png in Resources */,
 				A1BF8E8A234E4A0100C4E909 /* LaunchScreen.storyboard in Resources */,
+				A1BF8EBC234E4F9700C4E909 /* balloon.png in Resources */,
+				A1BF8EB7234E4E8C00C4E909 /* flag.png in Resources */,
+				A1BF8EB4234E4DD100C4E909 /* flower.png in Resources */,
+				A1BF8EB8234E4E8C00C4E909 /* flag.png in Resources */,
 				A1BF8E87234E4A0100C4E909 /* Assets.xcassets in Resources */,
 				A1BF8E85234E49F900C4E909 /* Main.storyboard in Resources */,
 			);
